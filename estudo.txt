@@ -1,0 +1,23 @@
+import React, { useState } from 'react';
+
+//Estado: Informação que será mantida pelo componente, lida e atualizada (imutabilidade)
+//Propriedade: Informações que um componente pai passa para o componente filho
+
+function App() {
+  //Variaveis
+  const [ counter, setCounter ] = useState(0)
+
+  //Funções proprias de um componente criamos dentro dele
+  function incrementCounter(){
+    setCounter(counter + 1)
+  }
+
+  return (
+    <>
+      <h1>Contador: {counter}</h1>
+      <button onClick={incrementCounter}>Incrementar</button>
+    </> 
+  );
+}
+
+export default App;
