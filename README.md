@@ -2,7 +2,7 @@
 
 FrontEnd criado em React para a aplicação feita durante a semana da OmniStack. O backend pode ser econtrado e clonado no [repositorio](https://github.com/lipecss/omnistack10-backend)
 
-- # [Acesse o Site Agora]()
+- # [Acesse o Site Agora](https://omnistack10-neardev.netlify.com/)
 
 
 ## Arquvio explicativo
