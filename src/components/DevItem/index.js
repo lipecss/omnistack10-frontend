@@ -33,7 +33,7 @@ function DevItem({ dev }) {
         </div>
       </header>
       <p>{dev.bio ? dev.bio : 'Usuario sem biografia no momento'}</p>
-      <a href={`https://github.com/${dev.github_username}`}>Ir ao Perfil no GitHub</a>
+      <a href={`https://github.com/${dev.github_username}`} rel="noopener noreferrer" target="_blank">Ir ao Perfil no GitHub</a>
     </li>
     )
 }
