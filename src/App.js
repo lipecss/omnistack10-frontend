@@ -8,7 +8,7 @@ import './Sidebar.css';
 import './Main.css';
 
 import DevForm from './components/DevForm'
-import DevItem from './components/DevItem'
+import DevItem from './components/DevItem/index'
 
 
 function App() {
@@ -39,6 +39,11 @@ function App() {
       </aside>
 
       <main>
+              
+        <div className="counter">
+          <p>Quantidade: <span>{devs.length}</span></p>
+        </div>
+
         <ul>
           {devs.map(dev => (
             <DevItem key={dev._id} dev={dev}/>
