@@ -40,6 +40,7 @@
 .counter span {
     font-size: 27px;
     font-weight: 700;
+    text-align: center;
     color: #6931ca;
     position: relative;
     top: 3px;
