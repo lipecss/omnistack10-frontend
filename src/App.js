@@ -7,13 +7,15 @@ import './App.css';
 import './Sidebar.css';
 import './Main.css';
 
+import DownButton from './components/DownButton'
 import DevForm from './components/DevForm'
-import DevItem from './components/DevItem/index'
+import DevItem from './components/DevItem'
 
 
 function App() {
 
   const [devs, setDevs] = useState([])
+  const [mobile, setIsMobile] = useState()
 
   useEffect(() => {
     async function loadDevs() {
@@ -22,6 +24,18 @@ function App() {
       setDevs(response.data)
     }
     loadDevs()
+  }, [])
+
+  useEffect(() => {
+    function getPlataform () {
+      var MobilePlataforms = (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Windows Phone/i)
+      if (MobilePlataforms.test(navigator.userAgent)){
+        setIsMobile(true)
+      }else{
+        setIsMobile(false)
+      }
+    };
+    getPlataform()
   }, [])
 
   async function handleAddDev(data) {
@@ -39,7 +53,6 @@ function App() {
       </aside>
 
       <main>
-              
         <div className="counter">
           <p>Quantidade: <span>{devs.length}</span></p>
         </div>
@@ -50,7 +63,7 @@ function App() {
           ))}
         </ul>
       </main>
-
+      <DownButton isMobile={mobile}/>
     </div>
   );
 }

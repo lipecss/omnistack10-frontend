@@ -1,0 +1,39 @@
+.group-download {
+    position: fixed;
+    top: 32px;
+    left: calc(50% - 50px);
+}
+
+.btn-download {
+    background: #6931ca;
+    padding: 20px;
+    border-radius: 30px;
+    z-index: 99;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn-download a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.close-window button{
+    position: absolute;
+    right: -30px;
+    top: -21px;
+    background: #6931ca;
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+    border: none;
+    font-size: 25px;
+    transition: background 0.5s;
+}
+
+.close-window button:hover{
+    background: rgb(231, 64, 92);
+    cursor: pointer;
+}
