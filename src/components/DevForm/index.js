@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
+import './styles.css'
 
 function DevForm({ onSubmit }) {
 
@@ -40,7 +41,8 @@ function DevForm({ onSubmit }) {
         setTechs('')
     }
 
-    return(<form onSubmit={handleSubmit}>
+    return(
+    <form onSubmit={handleSubmit}>
         <div className="input-block">
           <label htmlFor="guthub_username">Usuario GitHub</label>
           <input 

@@ -1,4 +1,5 @@
 li.dev-item {
+    position: relative;
     background: #FFFF;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
     border-radius: 2px;
@@ -48,4 +49,21 @@ li.dev-item a {
 
 li.dev-item a:hover {
     color: #5a2ea6;
+}
+
+.btn-delete {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -8px;
+    top: -9px;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 3px 6px 7px rgba(0,0,0, 0.3);
+    border: none;
+}
+
+.btn-delete:hover {
+    background: #6931ca;
+    cursor: pointer;
 }

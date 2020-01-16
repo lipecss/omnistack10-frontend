@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'https://omnistack-10.herokuapp.com/'
+    baseURL: 'http://localhost:33333'
 })
 
 export default api
