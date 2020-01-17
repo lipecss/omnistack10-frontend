@@ -5,9 +5,8 @@ FrontEnd criado em React para a aplicação feita durante a semana da OmniStack.
 - # [Acesse o Site Agora](https://omnistack10-neardev.netlify.com/)
 
 ![](https://i.imgur.com/Wc3WyFj.png)
-<div style="text-align:center"><img src="https://media.giphy.com/media/hteJ8ZXYQosS9KM3CF/giphy.gif" /></div>
-## Arquvio explicativo
-Na raiz do projeto contem o arquivo `estudo.txt` contendo apenas algumas anotações para iniciantes do **React**
+
+![](https://media.giphy.com/media/hteJ8ZXYQosS9KM3CF/giphy.gif)
 
 
 ## Scripts disponíveis
