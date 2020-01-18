@@ -8,9 +8,11 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.1",
     "create-react-app": "^3.3.0",
+    "material-icons-react": "^1.0.4",
     "netlify-cli": "^2.30.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-map-gl": "^5.2.1",
     "react-rebound": "^0.8.3",
     "react-scripts": "3.3.0"
   },

@@ -20,7 +20,7 @@ function DownButton({isMobile}) {
                             <div className="close-window">
                                 <button onClick={closeButton}>&times;</button>
                             </div>
-                            <a>Download APP</a>
+                            <p>Download APP</p>
                         </div>
                     </div>
                     )

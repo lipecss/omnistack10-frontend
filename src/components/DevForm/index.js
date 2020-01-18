@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 import './styles.css'
 
@@ -19,12 +20,20 @@ function DevForm({ onSubmit }) {
           },
           (err) => {
             console.log(err)
+            getLocationFirefox()
           },
           {
             timeout: 30000,
           }
         )
       }, [])
+
+    async function getLocationFirefox(){
+      const response  = await axios.get('https://location.services.mozilla.com/v1/geolocate?key=test')
+      const { lat, lng } = response.data.location
+      setLatitude(lat)
+      setLongitude(lng)
+    }
 
     async function handleSubmit(e) {
         e.preventDefault()

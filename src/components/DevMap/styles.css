@@ -1,0 +1,45 @@
+.avatar {
+    height: 34px;
+    width: 34px;
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: #FFF;
+}
+
+.mapboxgl-ctrl-bottom-left{
+    display: none !important;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+    display: none !important;
+}
+
+.dev-infos {
+    position: absolute;
+    display: table;
+    width: 280px;
+    right: 40px;
+    top: -99px;
+    background: #FFF;
+    color: #000;
+    padding: 13px;  
+    z-index: 99999;  
+}
+
+.dev-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.dev-bio {
+    color: #666;
+    margin-top: 5px;
+}
+
+
+.dev-techs {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #7d40e7;
+}

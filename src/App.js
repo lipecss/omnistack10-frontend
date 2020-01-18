@@ -10,6 +10,7 @@ import './Main.css';
 import DownButton from './components/DownButton'
 import DevForm from './components/DevForm'
 import DevItem from './components/DevItem'
+import DevMap from './components/DevMap'
 
 
 function App() {
@@ -55,6 +56,10 @@ function App() {
       <main>
         <div className="counter">
           <p>Quantidade: <span>{devs.length}</span></p>
+        </div>
+
+        <div className="map">
+          <DevMap/>
         </div>
 
         <ul>
