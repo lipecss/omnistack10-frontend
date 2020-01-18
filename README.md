@@ -6,7 +6,10 @@ FrontEnd criado em React para a aplicação feita durante a semana da OmniStack.
 
 ![](https://i.imgur.com/Wc3WyFj.png)
 
+![](https://i.imgur.com/qeNu3U0.png)
+
 ![](https://media.giphy.com/media/hteJ8ZXYQosS9KM3CF/giphy.gif)
+
 
 
 ## Scripts disponíveis
