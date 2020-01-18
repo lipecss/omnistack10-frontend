@@ -7,6 +7,7 @@ FrontEnd criado em React para a aplicação feita durante a semana da OmniStack.
 ![](https://i.imgur.com/Wc3WyFj.png)
 
 ![](https://i.imgur.com/qeNu3U0.png)
+###### *Para o mapa exibir é necessario habilitar que o site pegue a Localização, no navegador.
 
 ![](https://media.giphy.com/media/hteJ8ZXYQosS9KM3CF/giphy.gif)
 
