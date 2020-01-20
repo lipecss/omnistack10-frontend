@@ -67,10 +67,6 @@ function App() {
       </aside>
 
       <main>
-        <div className="counter">
-          <p>Quantidade: <span>{devs.length}</span></p>
-        </div>
-
         <div className="map">
           <DevMap/>
         </div>
@@ -80,6 +76,9 @@ function App() {
             paginate={paginate}
             currentPage={currentPage}
           />
+                  <div className="counter">
+          <p>Quantidade: <span>{devs.length}</span></p>
+        </div>
         <DevItem devs={currentDevs} loading={loading}/>
       </main>
       <DownButton isMobile={mobile}/>

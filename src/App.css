@@ -28,7 +28,7 @@
 }
 
 .counter {
-    width: 20%;
+    width: 60%; 
     height: auto;
     margin-bottom: 20px;
     background: #FFFF;
@@ -51,17 +51,36 @@
     top: 3px;
 }
 
-@media (max-width: 760px) {
+.map {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 375px) {
     .counter {
-        width: 46%;
-        height: auto;
-        margin-bottom: 20px;
-        background: #FFFF;
-        padding: 1px 10px;
-        border-radius: 30px;
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    .counter {
+        width: 50%;
     }
 }
 
-.map {
-    margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+    .counter {
+        width: 25%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .counter {
+        width: 20%;
+    }
+}
+  
+@media screen and (min-width: 1600px) {
+    .counter {
+        width: 25%;
+    }
 }
