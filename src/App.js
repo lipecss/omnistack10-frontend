@@ -11,18 +11,23 @@ import DownButton from './components/DownButton'
 import DevForm from './components/DevForm'
 import DevItem from './components/DevItem'
 import DevMap from './components/DevMap'
+import Pagination from './components/Pagination';
 
 
 function App() {
 
   const [devs, setDevs] = useState([])
+  const [loading, setLoading] = useState(false);
   const [mobile, setIsMobile] = useState()
+  const [currentPage, setCurrentPage] = useState(1);
+  const [devsPerPage] = useState(10);
 
   useEffect(() => {
     async function loadDevs() {
+      setLoading(true);
       const response = await api.get('/devs')
-
       setDevs(response.data)
+      setLoading(false);
     }
     loadDevs()
   }, [])
@@ -46,6 +51,14 @@ function App() {
     setDevs([...devs, response.data])
   }
 
+  //Get current Devs
+  const indexOfLastDev = currentPage * devsPerPage;
+  const indexOfFirstPost = indexOfLastDev - devsPerPage;
+  const currentDevs = devs.slice(indexOfFirstPost, indexOfLastDev);
+
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div id="app">
       <aside>
@@ -61,12 +74,13 @@ function App() {
         <div className="map">
           <DevMap/>
         </div>
-
-        <ul>
-          {devs.map(dev => (
-            <DevItem key={dev._id} dev={dev}/>
-          ))}
-        </ul>
+          <Pagination
+            devsPerPage={devsPerPage}
+            totalDevs={devs.length}
+            paginate={paginate}
+            currentPage={currentPage}
+          />
+        <DevItem devs={currentDevs} loading={loading}/>
       </main>
       <DownButton isMobile={mobile}/>
     </div>
