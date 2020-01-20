@@ -51,6 +51,7 @@ function DevMap() {
       mapStyle='mapbox://styles/mapbox/streets-v9'
       mapboxApiAccessToken={process.env.REACT_APP_MAX_PBOX_KEY}
       onViewportChange={setViewport}
+      width='100%'
       >
       {devs.map(dev => (
         <DevMarker
