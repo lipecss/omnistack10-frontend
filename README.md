@@ -4,14 +4,19 @@ FrontEnd criado em React para a aplicação feita durante a semana da OmniStack.
 
 - # [Acesse o Site Agora](https://omnistack10-neardev.netlify.com/)
 
+## Web
 ![](https://i.imgur.com/Wc3WyFj.png)
 
-![](https://i.imgur.com/qeNu3U0.png)
-###### *Para o mapa exibir é necessario habilitar que o site pegue a Localização, no navegador.
-
+## Mobile
 ![](https://media.giphy.com/media/hteJ8ZXYQosS9KM3CF/giphy.gif)
 
+------------
+### Features
+1. **Paginação**: melhorando a visualização dos cadastros, exibindo 10(dez) Devs por página;
+![](https://i.imgur.com/2XtPY1U.png)
 
+2. **Mapa**: visualize todos os Devs no mapa, e sua localização cadastrada de uma forma rapida e bonita.
+![](https://i.imgur.com/4JTNcQu.png)
 
 ## Scripts disponíveis
 
